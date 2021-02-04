@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example App</title>
+</head>
+<body>
+  
+<h3>Express JS CRUD Using Mongo DB and Express Handlebars</h3>
+
+ <a href="/add">Add Record</a> |    <a href="/display">Display Record</a> |
+
+ 
+
+
+ <br/>
+ <br/>
+{{#if success_msg}}
+  <div class="alert alert-success">{{success_msg}}</div>
+{{/if}}
+
+{{#if error_msg}}
+  <div class="alert alert-danger">{{error_msg}}</div>
+{{/if}}
+    {{{body}}}
+ 
+</body>
+</html>
